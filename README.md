@@ -1,0 +1,1 @@
+# Bitacora para procesos terapéuticos

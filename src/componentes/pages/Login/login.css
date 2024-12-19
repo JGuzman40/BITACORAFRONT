@@ -1,0 +1,79 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%; /* Ancho máximo del formulario */
+  padding: 1rem;
+  border: 1px solid var(--secondary-color); /* Borde del formulario */
+  border-radius: 25px; /* Bordes redondeados */
+  background-color: var(--primary-color); /* Color de fondo del formulario */
+  margin: 0 auto; /* Centrar el formulario */
+}
+
+div {
+  margin-bottom: 1rem; /* Espacio entre los campos */
+}
+
+label {
+  margin-right: 20px; /* Negrita para las etiquetas */
+  font-size: 12px;
+}
+
+input {
+  width: 80%;
+  padding: 0.5rem; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris claro */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 10px; /* Bordes redondeados */
+  font-size: 10px; /* Tamaño de fuente */
+}
+
+input:focus {
+  border-color: var(--primary-color); /* Cambiar el borde al enfocarse */
+}
+
+button {
+  padding: 0.6em 1.2em; /* Espaciado del botón */
+  background-color: var(--primary-color); /* Fondo del botón */
+  color: var(--secondary-color); /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 25px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave para el fondo */
+}
+
+button:hover {
+  background-color: var(--hover-bg-color); /* Fondo al pasar el mouse */
+  color: var(--hover-text-color); /* Color del texto al pasar el mouse */
+}
+
+.error {
+  color: rgb(252, 249, 249); /* Color de error */
+  font-size: 0.875em; /* Tamaño de fuente más pequeño para errores */
+}
+
+/* Media queries para hacer el formulario responsivo */
+@media (max-width: 768px) {
+  form {
+    max-width: 90%; /* Ampliar el ancho del formulario en pantallas más pequeñas */
+    padding: 1rem; /* Asegurarse de que haya suficiente padding */
+  }
+
+  input {
+    width: 90%; /* Hacer que los campos de entrada ocupen todo el ancho */
+  }
+
+  button {
+    width: 100%; /* Hacer que el botón ocupe todo el ancho */
+  }
+}
+
+@media (max-width: 480px) {
+  label {
+    font-size: 12px; /* Reducir el tamaño de la fuente de las etiquetas en pantallas muy pequeñas */
+  }
+
+  input {
+    font-size: 14px; /* Aumentar el tamaño de la fuente de entrada para mejor legibilidad */
+  }
+}

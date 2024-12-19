@@ -1,0 +1,52 @@
+/* global.css */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tipografía */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  color: #8dbc97; /* Tono medio */
+  background-color: #023a04; /* Blanco */
+  line-height: 1.5;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Titulares */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #eff4ef; /* Negro */
+}
+
+/* Botones */
+button {
+  background: #ceeacf; /* Tono medio */
+  color: #011e06; /* Blanco */
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #000; /* Negro */
+}
+
+/* Enfoque para elementos interactivos */
+button:focus,
+a:focus,
+input:focus {
+  outline: 2px solid #333; /* Tono medio */
+}

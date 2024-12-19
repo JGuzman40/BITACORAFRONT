@@ -1,0 +1,11 @@
+.divLanding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 70px;
+  padding: 1em;
+  text-align: center;
+  background-color: #051100;
+  border-radius: 25px;
+}
